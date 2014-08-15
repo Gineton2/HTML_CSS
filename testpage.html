@@ -2,23 +2,43 @@
 
 <html lang="en">
 <head>
-	<title>Social Media Resources</title>
-	<link rel="stylesheet" href="style1.css">
+	<title>HTML &amp; CSS Test Page</title>
+	<meta name="description"
+		content="HTML &amp; CSS Test Page" />
+	<meta name="keywords"
+		content="test, html, css" />
+	<meta http-equiv="author"
+		content="Gineton Alencar II" />
+	<link rel="stylesheet" type="text/css" href="css/style1.css" />
 </head>
 <body>
-	<h1>Social Media Resources</h1>
-	<h2>Videos</h2>
+	<h1>HTML &amp; CSS Test Page</h1>
+	<div class="box-set">
+	  	<figure class="box">Box 1</figure>
+	  	<figure class="box">Box 2</figure>
+	  	<figure class="box">Box 3</figure>
+	</div>
+	<h2>Social Media Resources</h2>
+	<h3>Videos</h3>
 	<dl>
 		<dt><a href="https://www.youtube.com/watch?v=oVfHeWTKjag">
 		Facebook fraud</a></dt>
 			<dd>Veritasium discusses the problems with facebook pages' promotion.</dd>
+			<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/oVfHeWTKjag?rel=0" frameborder="0" allowfullscreen></iframe>
 		<dt><a href="https://www.youtube.com/watch?v=l9ZqXlHl65g">
 			The Problem With Facebook</a></dt>
 			<dd>Veritasium discusses the problems with facebook's monetization/revenue scheme.</dd>
+			<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/l9ZqXlHl65g?rel=0" frameborder="0" allowfullscreen></iframe>
 	</dl>
-	<h2>Pictures/Infographics</h2>
+	<h3>Pictures/Infographics</h3>
 	<dl>
 		<dt><a href="http://i.imgur.com/J3HY2TX.png"> How to Create Perfect Posts</a></dt>
+	</dl>
+	<h3>IFrame Testing</h3>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49919.99778195391!2d-121.7349437!3d38.556817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808529999495543f%3A0xc3013f1b6ee28fff!2sDavis%2C+CA!5e0!3m2!1sen!2sus!4v1407283425014" width="400" height="300" frameborder="0" style="border:0"></iframe>
+
+
+	<h3>Form Testing</h3>
 	<fieldset class="form" id="login">
 		<legend>Login</legend>
 			<form action="login-test" method="post">
@@ -33,10 +53,14 @@
 		<legend>Demographics</legend>
 			<form action="info-test" method="post">
 			<p> Gender
-				<input id="female" type="radio" name="gender">
-				<label for="female">Female</label>
-				<input id="female" type="radio" name="gender">
-				<label for="female">Female</label>
+				<label for="female">
+					<input id="female" type="radio" name="gender" value="f" />
+					Female
+				</label>
+				<label for="male">
+					<input id="male" type="radio" name="gender" value="m" />
+					Male
+				</label>
 			</p>
 			<label for="birthday">Birthday:</label>
 			<input type="date" name="birthday" />
@@ -45,13 +69,19 @@
 	</fieldset>
 	<fieldset class="form" id="emailsub">
 		<legend>Subscribe to our mailing list!</legend>
-		<form action="">
+		<form action="" method="post">
 			<p>Email address:
 			<input type="email" name="email" />
-			<input type="submit" name="Submit" />
+			<input type="submit" value="Subscribe" />
 			</p>
 		</form>
 	</fieldset>
+	<div id="search">
+		<form action="" method="get">
+			<h2>Fanagle</h2>
+			<input type="search" name="search" />
+			<input type="submit" value="Fanagle" />
+		</form>
 </body>
 </html>
 
